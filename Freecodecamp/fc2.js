@@ -1,1 +1,0 @@
-isi bagian ini
