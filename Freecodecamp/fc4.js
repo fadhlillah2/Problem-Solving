@@ -1,13 +1,8 @@
-function getIndexToIns(arr, num) {
-  arr.sort(function (a, b) {
-    return a - b;
-  });
+// !Falsy Bouncer
 
-  for (var a = 0; a < arr.length; a++) {
-    if (arr[a] >= num) return a;
-  }
-
-  return arr.length;
+function bouncer(arr) {
+  return arr.filter(Boolean);
 }
 
-console.log(getIndexToIns([10, 20, 30, 40, 50], 35));
+console.log(bouncer([7, "ate", "", false, 9]));
+console.log(bouncer([false, null, 0, NaN, undefined, ""]));
