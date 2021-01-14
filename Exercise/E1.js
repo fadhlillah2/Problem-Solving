@@ -1,3 +1,5 @@
+// !Data Structures: Create a Circular Queue
+
 class CircularQueue {
   constructor(size) {
     this.collection = [];
