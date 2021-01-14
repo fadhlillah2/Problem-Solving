@@ -1,2 +1,2 @@
-# programmer-tool
+# Problem Solving
 welcome 
