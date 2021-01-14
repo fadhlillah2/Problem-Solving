@@ -1,2 +1,2 @@
-# PROBLEM SOLVING EXERCISE
+# Problem Solving
 welcome 
