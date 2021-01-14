@@ -1,2 +1,2 @@
-# programmer-tool
+# PROBLEM SOLVING EXERCISE
 welcome 
