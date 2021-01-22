@@ -51,3 +51,4 @@ coba.insertFirst(2);
 coba.insertLast(3);
 coba.insertLast(4);
 coba.printListData();
+console.log(coba);
