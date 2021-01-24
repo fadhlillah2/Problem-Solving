@@ -49,4 +49,4 @@ function LinkedList() {
 let ll = new LinkedList();
 console.log(ll.add(1));
 console.log(ll.add(2));
-console.log(ll.head.next.element);
+console.log(ll);
