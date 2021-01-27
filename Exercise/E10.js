@@ -21,15 +21,36 @@
 // console.log(reverseInt());
 
 //!Reverse Integer
-const reverse = function (x) {
-  let revNum = 0,
-    lastDigit = 0;
-  while (x !== 0) {
-    lastDigit = x % 10;
-    x = parseInt(x / 10);
-    revNum = revNum * 10 + lastDigit;
-    if (revNum < Math.pow(-2, 31) || revNum > Math.pow(2, 31) - 1) return 0;
-  }
-  return revNum;
-};
-console.log(reverse(125000));
+// const reverse = function (x) {
+//   let revNum = 0,
+//     lastDigit = 0;
+//   while (x !== 0) {
+//     lastDigit = x % 10;
+//     x = parseInt(x / 10);
+//     revNum = revNum * 10 + lastDigit;
+//     if (revNum < Math.pow(-2, 31) || revNum > Math.pow(2, 31) - 1) return 0;
+//   }
+//   return revNum;
+// };
+// console.log(reverse(125000));
+
+//=====================================================================================
+
+//!Square root func
+// var sqrt = function (x) {
+//   var isGoodEnough = function (guess) {
+//     return Math.abs(guess * guess - x) / x < 0.001;
+//   };
+
+//   var improve = function (guess) {
+//     return (guess + x / guess) / 2;
+//   };
+
+//   var sqrIter = function (guess) {
+//     return isGoodEnough(guess) ? guess : sqrIter(improve(guess));
+//   };
+
+//   return sqrIter(1.0);
+// };
+
+// console.log(Math.sqrt(2), sqrt(2));
