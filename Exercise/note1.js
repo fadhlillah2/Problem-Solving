@@ -86,14 +86,36 @@
 
 // ==================================================================================
 
-function isDuplicate(nums) {
-  count = {};
-  for (c of nums) {
-    count[c] = count[c] || 0;
-  }
-  for (c in nums) {
-    if (nums[c] > 1) return true;
-  }
-  return false;
-}
-console.log(isDuplicate([1, 2, 3, 3, 4]));
+// function isDuplicate(nums) {
+//   count = {};
+//   for (c of nums) {
+//     count[c] = count[c] || 0;
+//   }
+//   for (c in nums) {
+//     if (nums[c] > 1) return true;
+//   }
+//   return false;
+// }
+// console.log(isDuplicate([1, 2, 3, 3, 4]));
+
+//===================================================================================
+
+// Input: (s = "aiohn"), (indices = [3, 1, 4, 2, 0]);
+// Output: "nihao";
+
+// var shuffleString = function (s, indices) {
+//   var Obj = {},
+//     str = "";
+//   for (let i = 0; i < s.length; i++) {
+//     Obj[indices[i]] = s[i];
+//     //sebuah object berisikan index ke-idices[i] di assign oleh s index ke-i
+//     //(memasangkan antara elem pd param s dgn indices membetuk sebuah object) contoh sbg berikut
+//     //{ '0': 'n', '1': 'i', '2': 'h', '3': 'a', '4': 'o' }
+//   }
+//   for (key in Obj) {
+//     str += Obj[key];
+//   }
+//   return str;
+// };
+
+// console.log(shuffleString("aiohn", [3, 1, 4, 2, 0]));
