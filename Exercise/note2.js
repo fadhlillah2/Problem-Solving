@@ -22,3 +22,37 @@
 // };
 
 // console.log(twoSum([2, 11, 7, 15], 9));
+
+//=======================================================================================================
+
+// function fizzBuzz2(n) {
+
+//     let str = [];
+//     for (let i = 1; i <= n; i++) {
+//       if (i % 3 === 0 && i % 5 === 0) str.push("FizzBUzz");
+//       else if (i % 3 === 0) str.push("fizz");
+//       else if (i % 5 === 0) str.push("buzz");
+//       else str.push(i);
+//     }
+
+//     return str;
+//   }
+
+//   console.log(fizzBuzz2(15));
+
+//=====================================================================================================
+
+var inverseString = function (param) {
+  var l = param.length - 1,
+    i = 0,
+    param = param.split("");
+  while (i < l) {
+    temp = param[l];
+    param[i] = param[l];
+    param[l] = temp;
+    i++;
+    l--;
+  }
+  return param;
+};
+console.log(inverseString("abcd"));
