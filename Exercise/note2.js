@@ -42,17 +42,35 @@
 
 //=====================================================================================================
 
-var inverseString = function (param) {
-  var l = param.length - 1,
-    i = 0,
-    param = param.split("");
-  while (i < l) {
-    temp = param[l];
-    param[i] = param[l];
-    param[l] = temp;
-    i++;
-    l--;
-  }
-  return param;
-};
-console.log(inverseString("abcd"));
+// var inverseString = function (param) {
+//   var l = param.length - 1,
+//     i = 0,
+//     param = param.split("");
+//   while (i < l) {
+//     temp = param[l];
+//     param[i] = param[l];
+//     param[l] = temp;
+//     i++;
+//     l--;
+//   }
+//   return param;
+// };
+// console.log(inverseString("abcd")); //??????????? masih perlu revisi
+
+// ========================================================================================================
+
+// function confirmEnding(str, target) {
+//   for (
+//     let i = str.length - 1, j = target.length - 1;
+//     i >= 0, j >= 0;
+//     i--, j--
+//   ) {
+//     if (str[i] !== target[j]) return false;
+//   }
+//   return true;
+//   //Jadi intinya adalah fokus inisiasi pd bagian (huruf) ujung2 str dan target tsb. jika menemukan
+//   //str[i] !== target[j] maka akan lgsng direturn false.
+// }
+// console.log(confirmEnding("cobakan", "akan"));
+
+//===========================================================================================================
