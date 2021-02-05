@@ -9,8 +9,8 @@ function LinkedList() {
     this.next = null;
   }
 
-  this.head = () => this.head;
-  this.size = () => this.length;
+  // this.head = () => this.head;       Boleh pakai atau  tidak
+  // this.size = () => this.length;
 
   this.add = (element) => {
     const node = new Node(element);
@@ -47,6 +47,7 @@ function LinkedList() {
 }
 
 let ll = new LinkedList();
-console.log(ll.add(1));
-console.log(ll.add(2));
+ll.add(100);
+ll.add(200);
+ll.add(300);
 console.log(ll);
