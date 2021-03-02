@@ -58,5 +58,32 @@
 //   console.log(fusion(5));
 
 //! #3 =========================================================================================
+
+//! Reverse Words in a String III
+// Example 1:
+// Input: "Let's take LeetCode contest"
+// Output: "s'teL ekat edoCteeL tsetnoc"
+
+// var reverseWords = function (s) {
+//   s = s.split(" ");
+//   console.log(s);
+
+//   const reverseWord = (word) => {
+//     let str = "";
+//     for (let i = word.length - 1; i >= 0; i--) {
+//       str += word[i];
+//     }
+//     return str;
+//   };
+
+//   for (let i = 0; i < s.length; i++) {
+//     s[i] = reverseWord(s[i]);
+//   }
+//   console.log(s);
+
+//   return s.join(" ");
+// };
+// console.log(reverseWords("Let's take LeetCode contest"));
+
 //! #4 =========================================================================================
 //! #5 =========================================================================================
