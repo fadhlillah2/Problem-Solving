@@ -86,4 +86,40 @@
 // console.log(reverseWords("Let's take LeetCode contest"));
 
 //! #4 =========================================================================================
+//! Minimum Subsequence in Non-Increasing Order
+
+// Example 1:
+// Input: nums = [4,3,10,9,8]
+// Output: [10,9]
+// Explanation: The subsequences [10,9] and [10,8] are minimal such that the sum of their elements is strictly greater than the sum of elements not included, however, the subsequence [10,9] has the maximum total sum of its elements.
+
+// Example 2:
+// Input: nums = [4,4,7,6,7]
+// Output: [7,7,6]
+// Explanation: The subsequence [7,7] has the sum of its elements equal to 14 which is not strictly greater than the sum of elements not included (14 = 4 + 4 + 6). Therefore, the subsequence [7,6,7] is the minimal satisfying the conditions. Note the subsequence has to returned in non-decreasing order.
+
+// Example 3:
+// Input: nums = [6]
+// Output: [6]
+
+// const minSubsequence = (nums) => {
+//   nums.sort((a, b) => b - a);
+
+//   let ans = [nums[0]];
+//   let sum = 0;
+
+//   for (let i = 1; i < nums.length; i++) sum += nums[i];
+
+//   for (let i = 1; i < nums.length; i++) {
+//     let ansSum = ans.reduce((a, b) => a + b);
+//     if (ansSum > sum) return ans;
+
+//     ans.push(nums[i]);
+//     sum -= nums[i];
+//   }
+
+//   return ans;
+// };
+// console.log(minSubsequence([4, 3, 10, 9, 8]));
+
 //! #5 =========================================================================================
