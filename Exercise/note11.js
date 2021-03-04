@@ -112,6 +112,66 @@
 //   console.log(diStringMatch("IDID"));
 
 //! #1 =========================================================================================
+
+//! Robot Return to Origin
+
+// Example 1:
+// Input: moves = "UD"
+// Output: true
+// Explanation: The robot moves up once, and then down once. All moves have the same magnitude, so it ended up at the origin where it started. Therefore, we return true.
+
+// Example 2:
+// Input: moves = "LL"
+// Output: false
+// Explanation: The robot moves left twice. It ends up two "moves" to the left of the origin. We return false because it is not at the origin at the end of its moves.
+
+// Example 3:
+// Input: moves = "RRDD"
+// Output: false
+
+// Example 4:
+// Input: moves = "LDRRLRUULR"
+// Output: false
+
+//??? 1 hasn't finished
+// var judgeCircle = function (moves) {
+//   const sqr = { U: 1, D: -1, R: 1, L: -1 };
+//   let a = 0;
+//   for (let i = 0; i < moves.length; i++) {
+//     if (sqr[moves[i]] == "U" && "D") a += sqr[moves[i]];
+//   }
+
+//   console.log(a);
+//   if (a == 0) return true;
+//   return false;
+// };
+// console.log(judgeCircle("RRDDU"));
+
+//! 2
+// var judgeCircle = function (moves) {
+//   let x = 0;
+//   let y = 0;
+
+//   for (let i = 0; i < moves.length; i++) {
+//     switch (moves[i]) {
+//       case "R":
+//         x++;
+//         break;
+//       case "L":
+//         x--;
+//         break;
+//       case "U":
+//         y++;
+//         break;
+//       case "D":
+//         y--;
+//         break;
+//     }
+//   }
+//   return x == 0 && y == 0;
+// };
+// console.log(judgeCircle("RRLL"));
+
 //! #2 =========================================================================================
 //! #3 =========================================================================================
 //! #4 =========================================================================================
