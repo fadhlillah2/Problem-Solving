@@ -173,6 +173,50 @@
 // console.log(judgeCircle("RRLL"));
 
 //! #2 =========================================================================================
+
+// input: 3
+// output : 3
+
+// in: 4
+//out: 5
+
+//! 1
+// function climbStairs(n) {
+//   if (n == 1 || n == 0) return 1;
+//   let first = 1;
+//   let second = 2;
+
+//   for (let i = 3; i <= n; i++) {
+//     let third = first + second;
+//     first = second;
+//     second = third;
+//   }
+//   return second;
+// }
+// console.log(climbStairs(3));
+
+//! 2
+
+// function fibonacci(num) {
+//   var curr = 1,
+//     prev = 0,
+//     temp;
+
+//   while (num >= 0) {
+//     // temp = curr;
+//     // curr = curr + prev;
+//     // prev = temp;
+
+//     temp = prev;
+//     prev = curr;
+//     curr += temp;
+//     num--;
+//   }
+
+//   return prev;
+// }
+// console.log(fibonacci(5));
+
 //! #3 =========================================================================================
 //! #4 =========================================================================================
 //! #5 =========================================================================================
