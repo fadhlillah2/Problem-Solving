@@ -233,4 +233,17 @@
 // console.log(reverseString(["h", "e", "l", "l", "o"]));
 
 //! #4 =========================================================================================
+
+// function toLowerCase(string) {
+//   let str = "",
+//     l = string.length;
+//   for (letter of string) {
+//     index = letter.charCodeAt(0);
+//     if (index >= 65 && index <= 97) str += String.fromCharCode(index + 32);
+//   }
+
+//   return str;
+// }
+// console.log(toLowerCase("AAASDZZXCZXC"));
+
 //! #5 =========================================================================================
