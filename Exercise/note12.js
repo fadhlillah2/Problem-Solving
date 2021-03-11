@@ -12,3 +12,18 @@ var countConsistentStrings = function (allowed, words) {
   return c;
 };
 console.log(countConsistentStrings("ab", ["ad", "bd", "aaab", "baa", "badab"]));
+
+//! ==================================================================================
+
+var subtractProductAndSum = function (n) {
+  let sum = 0,
+    product = 1;
+  while (n) {
+    num = n % 10;
+    sum += num;
+    product *= num;
+    n = Math.floor(n / 10);
+  }
+  return product - sum;
+};
+console.log(subtractProductAndSum(234));
