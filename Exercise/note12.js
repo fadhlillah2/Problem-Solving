@@ -13,7 +13,7 @@ var countConsistentStrings = function (allowed, words) {
 };
 console.log(countConsistentStrings("ab", ["ad", "bd", "aaab", "baa", "badab"]));
 
-//! 1==================================================================================
+//! #1==================================================================================
 
 var subtractProductAndSum = function (n) {
   let sum = 0,
@@ -28,7 +28,7 @@ var subtractProductAndSum = function (n) {
 };
 console.log(subtractProductAndSum(234));
 
-//! 2 ==================================================================================
+//! #2 ==================================================================================
 
 // var intersect = function (num1, num2) {
 //   const map = new Map();
@@ -53,6 +53,28 @@ console.log(subtractProductAndSum(234));
 // };
 // console.log(intersect([1, 2, 1, 2, 3, 5, 2, 5, 1], [1, 2, 1]));
 
-//! 2 ==================================================================================
-//! 2 ==================================================================================
-//! 2 ==================================================================================
+//! #3 ==================================================================================
+
+//! 1
+// var numJewelsInStones = function (jewels, stones) {
+//   let c = 0;
+//   for (let i = 0; i < stones.length; i++) {
+//     for (let j = 0; j < jewels.length; j++) {
+//       if (stones[i] === jewels[j]) c++;
+//     }
+//   }
+//   return c;
+// };
+// console.log(numJewelsInStones("aA", "aAAbbbb"));
+
+//! 2
+// const numJewelsInStones = (J, S) => {
+//   const jewels = new Set(J);
+
+//   console.log(jewels.has("A"));
+//   return S.split("").reduce((res, s) => res + jewels.has(s), 0);
+// };
+// console.log(numJewelsInStones("aA", "aAAbbbb"));
+
+//! #4 ==================================================================================
+//! #5 ==================================================================================
