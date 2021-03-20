@@ -77,4 +77,18 @@ console.log(subtractProductAndSum(234));
 // console.log(numJewelsInStones("aA", "aAAbbbb"));
 
 //! #4 ==================================================================================
+
+// function changeStructure(s, idx) {
+//   let obj = {},
+//     str = "";
+//   for (let i = 0; i < s.length; i++) {
+//     obj[idx[i]] = s[i];
+//   }
+//   for (key in obj) {
+//     str += obj[key];
+//   }
+//   console.log(str);
+// }
+// console.log(changeStructure("magi", [3, 2, 1, 4]));
+
 //! #5 ==================================================================================
