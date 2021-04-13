@@ -48,3 +48,23 @@
 // console.log(magic([1, 2, 3, 4, 5, 6]));
 
 //! 2 ==================================================================================
+
+//in: "2.2.2.2"
+//out: " 2[.]2[.]2[.]2[.] "
+
+//! 1
+// function mag(str) {
+//   return str.split(".").join("[.]");
+// }
+// console.log(mag("2.2.2.2"));
+
+//!2;
+// function mag(str) {
+//   let o = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === ".") o += "[.]";
+//     else o += str[i];
+//   }
+//   return o;
+// }
+// console.log(mag("2.2.2.2"));
