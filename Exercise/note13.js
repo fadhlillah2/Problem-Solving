@@ -124,3 +124,24 @@
 //   console.log(fizzBuzz(15));
 
 //! 5 ==================================================================================
+
+//in : [1,2,3,4,5,6]
+//out: [1,3,6,10,15]
+
+// function accumulation(arr) {
+//   let sum = 0,
+//     nArr = [];
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     nArr.push((sum += arr[i]));
+//   }
+//   return nArr;
+// }
+// console.log(accumulation([1, 2, 3, 4, 5, 6]));
+
+// function accumulation(arr) {
+//   for (let i = 1; i < arr.length; i++) {
+//     arr[i] += arr[i - 1];
+//   }
+//   return arr;
+// }
+// console.log(accumulation([1, 2, 3, 4, 5, 6]));
