@@ -47,3 +47,17 @@
 // console.log(removeDuplicates("aababaab"));
 
 // ! 1======================================================================================================
+
+// function toLowCase(str) {
+//   let lowerCase = "";
+//   for (let letter of str) {
+//     const index = letter.charCodeAt(0);
+//     console.log(index);
+//     console.log(letter);
+//     if (index >= 65 && index <= 90) letter = String.fromCharCode(index + 32);
+//     console.log(letter);
+//     lowerCase += letter;
+//   }
+//   return lowerCase;
+// }
+// console.log(toLowCase("HELLO"));
