@@ -63,3 +63,39 @@
 // console.log(toLowCase("HELLO"));
 
 // ! 2 ====================================================================================================
+
+//!  Flipping an Image
+
+// Example 1:
+// Input: image = [[1,1,0],[1,0,1],[0,0,0]]
+// Output: [[1,0,0],[0,1,0],[1,1,1]]
+// Explanation: First reverse each row: [[0,1,1],[1,0,1],[0,0,0]].
+// Then, invert the image: [[1,0,0],[0,1,0],[1,1,1]]
+
+// Example 2:
+// Input: image = [[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]
+// Output: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
+// Explanation: First reverse each row: [[0,0,1,1],[1,0,0,1],[1,1,1,0],[0,1,0,1]].
+// Then invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
+
+var flipAndInvertImage = function (image) {
+  let reversed = image.map((curr, index) => {
+    return curr.reverse();
+  });
+  console.log(reversed);
+  for (i = 0; i < reversed.length; i++) {
+    for (let j = 0; j < reversed[i].length; j++) {
+      if (reversed[i][j] === 1) reversed[i][j] = 0;
+      else reversed[i][j] = 1;
+    }
+  }
+  return reversed;
+};
+console.log(
+  flipAndInvertImage([
+    [1, 1, 0, 0],
+    [1, 0, 0, 1],
+    [0, 1, 1, 1],
+    [1, 0, 1, 0],
+  ])
+);
