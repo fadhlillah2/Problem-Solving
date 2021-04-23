@@ -1,4 +1,4 @@
-//! 1
+//* 1
 // var removeDuplicates = function (S) {
 //   let obj = {},
 //     str = "";
@@ -31,7 +31,7 @@
 // };
 // console.log(removeDuplicates("aababaab"));
 
-//! 3
+//* 3
 // var removeDuplicates = function (S) {
 //   let res = [];
 //   for (let i = 0; i < S.length; i++) {
@@ -64,7 +64,7 @@
 
 // ! 2 ====================================================================================================
 
-//!  Flipping an Image
+//*  Flipping an Image
 
 // Example 1:
 // Input: image = [[1,1,0],[1,0,1],[0,0,0]]
@@ -99,3 +99,43 @@ console.log(
     [1, 0, 1, 0],
   ])
 );
+
+// ! 3 ====================================================================================================
+
+//* Remove Outermost Parentheses (goop concept)
+// Example 1:
+// Input: "(()())(())"
+// Output: "()()()"
+// Explanation:
+// The input string is "(()())(())", with primitive decomposition "(()())" + "(())".
+// After removing outer parentheses of each part, this is "()()" + "()" = "()()()".
+
+// Example 2:
+// Input: "(()())(())(()(()))"
+// Output: "()()()()(())"
+// Explanation:
+// The input string is "(()())(())(()(()))", with primitive decomposition "(()())" + "(())" + "(()(()))".
+// After removing outer parentheses of each part, this is "()()" + "()" + "()(())" = "()()()()(())".
+
+// Example 3:
+// Input: "()()"
+// Output: ""
+// Explanation:
+// The input string is "()()", with primitive decomposition "()" + "()".
+// After removing outer parentheses of each part, this is "" + "" = "".
+
+// var removeOuterParentheses = function (S) {
+//   let a = "",
+//     c = 0;
+//   for (let s of S) {
+//     if (s === "(") {
+//       if (c) a += s;
+//       c++;
+//     } else {
+//       c--;
+//       if (c) a += s;
+//     }
+//   }
+//   return a;
+// };
+// console.log(removeOuterParentheses("()()"));
