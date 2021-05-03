@@ -170,7 +170,6 @@ console.log(
 // let a = 123123123123;
 // console.log(Number(a.toString().replace("1", "5")));
 
-
 // ! 5 ====================================================================================================
 
 // Input: n = 234
@@ -193,10 +192,7 @@ console.log(
 // };
 // console.log(subtractProductAndSum(234));
 
-
-
-
-
+//====
 
 // Input: n = 7
 // Output: 6
@@ -220,3 +216,21 @@ console.log(
 //   return sum;
 // };
 // console.log(numberOfMatches(7));
+
+// ===
+
+// function parenthesiss(str) {
+//   let stack = [],
+//     maxDepth = 0;
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === "(") stack.push(str[i]);
+//     if (str[i] === ")") stack.pop();
+//     maxDepth = Math.max(maxDepth, stack.length);
+//   }
+//   console.log(stack);
+//   return maxDepth - stack.length;
+// }
+// console.log(parenthesiss("(((((1)+((2))+(((3))))))))"));
+// console.log(parenthesiss("(1)+((2))"));
+// console.log(parenthesiss("(((1)+(((2))+(((3)))))"));
