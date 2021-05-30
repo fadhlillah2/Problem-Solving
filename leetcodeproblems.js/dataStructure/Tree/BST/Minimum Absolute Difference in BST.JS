@@ -58,9 +58,3 @@ var getMinimumDifference = function (root) {
 
 //     return min;
 // };
-
-let a = [1, 2, 3];
-let b = [1, 3, 3];
-for (let i = 0; i < a.length; i++) {
-  a[i] === b[i] ? false : true;
-}
