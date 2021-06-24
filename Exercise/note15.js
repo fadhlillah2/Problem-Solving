@@ -42,3 +42,70 @@
 // };
 // console.log(maxProfit([7, 1, 5, 3, 6, 4]));
 // console.log(Number.MAX_SAFE_INTEGER);
+
+// ! 2 ====================================================================================================
+
+//! 1
+// var isPalindrome = function (x) {
+//   const isNegative = x < 0 ? true : false;
+
+//   if (isNegative) {
+//     return false;
+//   }
+
+//   const temp = x;
+//   let reversed = 0;
+
+//   while (x > 0) {
+//     reversed = reversed * 10 + (x % 10);
+//     x = parseInt(x / 10);
+//   }
+
+//   return reversed == temp;
+// };
+
+//! 2
+// var isPalindrome = function (x) {
+//   if (x < 0) {
+//     return false;
+//   }
+
+//   if (x < 10) {
+//     return true;
+//   }
+
+//   if (x % 10 === 0 && x !== 0) {
+//     return false;
+//   }
+
+//   const str = String(x);
+//   let i = 0,
+//     j = str.length - 1;
+
+//   while (i < j) {
+//     if (str[i] !== str[j]) {
+//       return false;
+//     }
+
+//     i++;
+//     j--;
+//   }
+
+//   return true;
+// };
+// console.log(isPalindrome(1111111));
+
+//! 3 bg paji
+// function isAnagramInt(x) {
+//   if (x < 0) return false;
+//   let res = 0,
+//     y = x;
+//   while (y) {
+//     remain = y % 10;
+//     console.log(remain);
+//     res = remain + res * 10;
+//     y = Math.floor(y / 10);
+//   }
+//   return res === x ? true : false;
+// }
+// console.log(isAnagramInt(125213));
