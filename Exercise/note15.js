@@ -111,6 +111,6 @@
 // console.log(isAnagramInt(125213));
 
 
-// var checkIfPangram = function(sentence) {
-//     return new Set(sentence.split("")).size == 26;
-// };
+var checkIfPangram = function(sentence) {
+    return new Set(sentence.split("")).size == 26;
+};
