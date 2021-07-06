@@ -125,3 +125,17 @@ var longestCommonPrefix = function(strs) {
         return prev.slice(0, i);
     });
 };
+
+
+function pigLatin(str){
+    
+    for(let i=0; i<str.length-1; i++){
+        if(str[i] === 'a' || str[i] === 'i' ||str[i] === 'u' ||str[i] === 'e' ||str[i] === 'o') {
+          
+          return  str.substring(i, str.length) + str.substring(0, i)
+        }   
+        
+    }
+   
+}
+console.log(pigLatin('dante'));
