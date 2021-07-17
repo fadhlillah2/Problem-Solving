@@ -28,3 +28,12 @@ var findTheDifference = function(s, t) {
     return String.fromCharCode(sum2-sum1);
   };
   console.log(findTheDifference('abcd','abcde'))
+
+
+
+
+  
+  var isPalindromeNumber = function(x) {
+    
+  };
+  console.log(isPalindromeNumber(121))
