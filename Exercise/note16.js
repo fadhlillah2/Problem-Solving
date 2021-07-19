@@ -51,3 +51,15 @@ var findTheDifference = function(s, t) {
     }
     return ans;
 };
+console.log(buildArray([1,3,2,5,4]))
+
+
+
+var truncateSentence = function(s, k) {
+  let arr = s.split(" "), newArr = [];
+  for(let i=0; i<k; i++){
+      newArr.push(arr[i]);
+  }
+   return newArr.join(' ')
+};
+console.log(truncateSentence("hello world this is monday"))
