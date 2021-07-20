@@ -63,3 +63,8 @@ var truncateSentence = function(s, k) {
    return newArr.join(' ')
 };
 console.log(truncateSentence("hello world this is monday"))
+
+
+let a= "123456"
+
+console.log("2".charCodeAt() + "1".charCodeAt())
