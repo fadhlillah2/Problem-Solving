@@ -68,3 +68,31 @@ console.log(truncateSentence("hello world this is monday"))
 let a= "123456"
 
 console.log("2".charCodeAt() + "1".charCodeAt())
+
+
+
+
+var reverseVowels = function(s) {
+  let i = 0;
+  let j = s.length-1; 
+ 
+  const vowel = new Set(['a','i','u','e','o']); 
+  str = s.split(''); 
+  while(i <= j){
+      let iIsV = vowel.has(str[i].toLowerCase());
+      let jIsV = vowel.has(str[j].toLowerCase());
+      
+      if(iIsV && jIsV){
+          let tmp = str[i];
+          str[i] = str[j];
+          str[j] = tmp;
+          i++;
+          j--
+      } 
+      if(!iIsV) i++;
+      if(!jIsV) j--;
+      }
+      return str.join('');
+  
+};
+console.log(reverseVowels("hello"))
