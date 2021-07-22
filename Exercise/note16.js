@@ -96,3 +96,18 @@ var reverseVowels = function(s) {
   
 };
 console.log(reverseVowels("hello"))
+
+
+
+
+var maxSubArray = function(nums) {
+  let max = nums[0];
+  let current = Math.max(max, 0)
+  for(let i = 1; i<nums.length; i++){
+      current += nums[i];
+      max = Math.max(max, current);
+      current = Math.max(current, 0)
+  }
+  return max;
+};
+console.log(maxSubArray([1,2,-3,4,3,-4,3]))
