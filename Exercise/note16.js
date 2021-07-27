@@ -111,3 +111,17 @@ var maxSubArray = function(nums) {
   return max;
 };
 console.log(maxSubArray([1,2,-3,4,3,-4,3]))
+
+
+
+
+var singleNumber = function(nums) {
+  let hash = {}
+  for(let val of nums){
+      hash[val]?delete hash[val]:hash[val]=1;
+  }
+  console.log("hash,", hash)
+  return Object.keys(hash)[0]
+};
+
+console.log(singleNumber([1,2,2,2,2,1,3,4]))
