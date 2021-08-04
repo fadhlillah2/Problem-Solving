@@ -136,7 +136,7 @@ console.log("==================================  9  ============================
   return s.trim().split(" ").pop().length;
 };
 
-console.log(lengthOfLastWord("   fly me   to   the moon  "))
+console.log("in: ' fly me   to   the moon'  >>>> out:", lengthOfLastWord("   fly me   to   the moon  "))
 console.log("==================================  10  =========================================")
 
 
