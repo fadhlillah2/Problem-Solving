@@ -11,7 +11,7 @@ function twoSum (arr, target) {
     
 }
 console.log(twoSum([2,7,11,15],18))
-
+console.log("==================================  1  =========================================")
 
 
 var findTheDifference = function(s, t) {
@@ -28,7 +28,7 @@ var findTheDifference = function(s, t) {
     return String.fromCharCode(sum2-sum1);
   };
   console.log(findTheDifference('abcd','abcde'))
-
+  console.log("==================================  2  =========================================")
 
 
 
@@ -37,7 +37,7 @@ var findTheDifference = function(s, t) {
     
   };
   console.log(isPalindromeNumber(121))
-
+  console.log("==================================  3  =========================================")
 
 
 
@@ -52,7 +52,7 @@ var findTheDifference = function(s, t) {
     return ans;
 };
 console.log(buildArray([1,3,2,5,4]))
-
+console.log("==================================  4  =========================================")
 
 
 var truncateSentence = function(s, k) {
@@ -63,12 +63,12 @@ var truncateSentence = function(s, k) {
    return newArr.join(' ')
 };
 console.log(truncateSentence("hello world this is monday"))
-
+console.log("==================================  5  =========================================")
 
 let a= "123456"
 
 console.log("2".charCodeAt() + "1".charCodeAt())
-
+console.log("==================================  6  =========================================")
 
 
 
@@ -96,7 +96,7 @@ var reverseVowels = function(s) {
   
 };
 console.log(reverseVowels("hello"))
-
+console.log("==================================  7  =========================================")
 
 
 
@@ -111,7 +111,7 @@ var maxSubArray = function(nums) {
   return max;
 };
 console.log(maxSubArray([1,2,-3,4,3,-4,3]))
-
+console.log("==================================  8  =========================================")
 
 
 
@@ -125,3 +125,18 @@ var singleNumber = function(nums) {
 };
 
 console.log(singleNumber([1,2,2,2,2,1,3,4]))
+console.log("==================================  9  =========================================")
+
+
+/**
+ * @param {string} s
+ * @return {number}
+ */
+ var lengthOfLastWord = function(s) {
+  return s.trim().split(" ").pop().length;
+};
+
+console.log(lengthOfLastWord("   fly me   to   the moon  "))
+console.log("==================================  10  =========================================")
+
+
